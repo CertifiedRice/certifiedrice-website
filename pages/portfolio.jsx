@@ -3,7 +3,11 @@ import {motion, AnimatePresence} from "framer-motion";
 
 export default function Portfolio() {
   return (
-      <div className="bg-dark">
+      <div>{/*Olspe: div had a className="bg-dark", removed this as it was causing my background theme-color-change to be overridden since it was using an 
+        '!important' css value. Looking at chrome dev tools, it shows that this is happening in a _utilities.scss:68 file. Can't find this file and I'm not sure if 
+        I should change this file. I advise that you remove where it's accepting '!important'. 
+        */}
+        
         <Head>
           <title>Certified_Rice</title>
           <link

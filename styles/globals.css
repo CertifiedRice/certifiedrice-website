@@ -10,22 +10,61 @@
 html,
 body {
     text-align: center;
-    background-color: var(--bg-dark);
+    /* background-color: var(--bg-dark); */
     padding: 0;
-     color: var(--tc-dark);
+    /* color: var(--tc-dark); */
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+/* Added by Olspe */
+.myDark {
+    background-color: var(--bg-dark);
+    color: var(--tc-dark);
+}
+
+/* Added by Olspe */
+.myLight {
+    background-color: var(--bg-light);
+    color: var(--tc-light);
+}
+
+/* Added by Olspe */
+.myDarkBorder{
+    /* This border styling will be used when in light mode */
+    border: 5px solid var(--bg-dark);
+}
+
+/* Added by Olspe */
+.myLightBorder{
+    /* This border styling will be used when in dark mode */
+    border: 5px solid var(--bg-light);
+}
+/* Added by Olspe */
+#theme-btn {
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Added by Olspe */
+ion-icon {
+    width: 60%;
+    margin: 0 auto;
+}
+
 a {
-    color: mediumpurple;
+    /* color: mediumpurple; */
     text-decoration: none;
 }
 
 .underline {
     text-decoration: underline;
-    text-decoration-color: gray;
+    /* text-decoration-color: gray; */
     font-size: 50px;
 }
 
@@ -39,22 +78,22 @@ a {
 
 .header {
     text-align: center;
-     color: var(--tc-dark);
+     /* color: var(--tc-dark); */
     /*background-color: #b36500;*/
     padding-bottom: 3cm;
     padding-top: 5cm;
 }
 
 .header2 {
-     color: var(--tc-dark);
+     /* color: var(--tc-dark); */
     text-align: center;
     background-color: #b36500;
 }
 
 .header3 {
-     color: var(--tc-dark);
+     /* color: var(--tc-dark); */
     text-align: center;
-    background-color: gray;
+    /* background-color: gray; */
 }
 
 .buttons2 {
@@ -67,6 +106,9 @@ footer {
      color: var(--tc-dark);
     display: flex;
     flex-direction: column;
+    /* position:fixed;bottom:0;left:0;right:0;height:30px; */
+    /* Olspe: Footer currently ends mid-page on my screen, above fixes this for the ContactMe and  
+       HireMe pages, but not for the blog page because it blocks some of the content */
 }
 
 a {
@@ -169,7 +211,7 @@ button:hover {
 .box {
     width: 320px;
     padding: 10px;
-    border: 5px white solid;
+    /* border: 5px white solid; */
 }
 
 .box:hover {
@@ -229,7 +271,7 @@ ul {
     justify-content: space-around;
     align-items: center;
     padding-top: 2cm;
-     color: var(--tc-dark);
+     /* color: var(--tc-dark); */
 }
 
 /* Added by Olspe */
@@ -356,7 +398,12 @@ ul {
     justify-content: space-around;
     align-items: center;
     padding-top: 2cm;
-     color: var(--tc-dark);
+     /* color: var(--tc-dark); */
+}
+
+.blogposts:nth-child(0) {
+    
+     /* color: var(--tc-dark); */
 }
 /* Modified by Olspe */
 .social {
@@ -368,6 +415,12 @@ ul {
     align-items: center;
     margin-bottom: 20px;
     padding-bottom: 20px;
+}
+
+/* Added by Olspe */
+.social a img{
+    /* added transparent border to fix the css 'jitter' on the links when the are hovered */
+    border-bottom: 5px solid transparent;
 }
 
 /* Added by Olspe */
@@ -385,13 +438,13 @@ button h6{
 
 /* Added by Olspe */
 .anchor-text{
-    color: rgb(217, 253, 10);
+    color: rgb(253, 10, 10);
 
 }
 
 /* Added by Olspe */
 .anchor-text:hover{
-    color:rgb(10, 253, 233);
+    /* color:rgb(10, 253, 233); */
     font-weight: bold;
 }
 
