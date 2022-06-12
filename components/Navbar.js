@@ -26,6 +26,10 @@ const Navbar = () => {
 
     return (
         <nav className="hamburger-menu">  {/* Olspe: Added classNames and html elements to make the burger icon */}
+            <input id="menu__toggle" type="checkbox" />
+            <label className="menu__btn" htmlFor="menu__toggle">
+                <span className="myspan"></span>
+            </label>
             <div className="nav menu__box">
                 <a className="active ricebowl">🍚</a>
                 <a className="active">Certified_Rice</a>
@@ -38,11 +42,11 @@ const Navbar = () => {
                 <a href="https://github.com/CertifiedRice/certifiedrice-website" className='menu-item'><i className="fa-brands fa-github"></i>&nbsp; Source</a>
                 <button type="button" id="theme-btn" onClick={ themeToggle}>{themeIcon}</button>
             </div>
-    {/*Olspe: Added Script tag to access ionic-icons */}
-    <Script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></Script>
-    <Script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></Script>
-</nav>
-)
+            {/*Olspe: Added Script tag to access ionic-icons */}
+            <Script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></Script>
+            <Script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></Script>
+        </nav>
+    )
 }
 
 export default Navbar;
