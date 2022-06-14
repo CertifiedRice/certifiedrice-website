@@ -30,7 +30,7 @@ const Navbar = () => {
             <label className="menu__btn" htmlFor="menu__toggle">
                 <span className="myspan"></span>
             </label>
-            <div className="topnav menu__box">
+            <div className="nav menu__box">
                 <a className="active ricebowl">🍚</a>
                 <a className="active">Certified_Rice</a>
                 <a href="../" className='menu__item'>Home</a>
